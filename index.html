@@ -1,12 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>McAdam Studios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="McAdam Studios — games, stories, and digital worlds." />
+    <meta name="theme-color" content="#0b0f14" />
+    <link rel="stylesheet" href="assets/css/site.css" />
 </head>
+
 <body>
-    <h1>McAdam Studios</h1>
-    <p>The studio is live.</p>
+    <div class="wrap">
+        <header>
+            <a class="brand" href="index.html">
+                <span class="mark" aria-hidden="true"></span>
+                <span>MCADAM STUDIOS</span>
+            </a>
+
+            <nav>
+                <a class="active" href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="worlds.html">Worlds</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="kicker"><span class="dot"></span> Designed by McAdam Studios</div>
+            <h1>We build worlds with teeth.</h1>
+            <p class="lead">
+                Games, stories, and digital products — built for people who like their fiction sharp and their fun slightly dangerous.
+                This is the public HQ for what we’re shipping next.
+            </p>
+
+            <div class="btnRow">
+                <a class="btn primary" href="worlds.html">Explore worlds</a>
+                <a class="btn" href="projects.html">See projects</a>
+            </div>
+        </section>
+
+        <section class="grid twoUp" aria-label="Highlights">
+            <div class="card">
+                <h2>Flagship IP</h2>
+                <p><strong>Out of the Ashes</strong> — post-collapse survival drama built around family, leadership, and the cost of hope.</p>
+                <span class="tag">Books → Screen-ready</span>
+            </div>
+
+            <div class="card">
+                <h2>In Development</h2>
+                <p><strong>Turbo Carnage</strong> — arcade racer-shooter chaos in Unreal Engine. Multiplayer-first. Maximum carnage.</p>
+                <span class="tag">Game Development</span>
+            </div>
+        </section>
+
+        <footer>
+            <div>© <span id="y"></span> McAdam Studios</div>
+            <div>Built on GitHub Pages.</div>
+        </footer>
+    </div>
+
+    <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
