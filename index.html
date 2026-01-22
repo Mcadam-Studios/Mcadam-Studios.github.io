@@ -4,79 +4,70 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>McAdam Studios</title>
-    <meta name="description" content="McAdam Studios — games, stories, and digital worlds." />
-    <meta name="theme-color" content="#0b0f14" />
-    <link rel="stylesheet" href="assets/css/site.css" />
 
+    <meta name="description" content="McAdam Studios — independent studio building grounded story worlds across books, games, and digital media." />
+    <meta name="theme-color" content="#0b0f14" />
+
+    <!-- IMPORTANT: lowercase path -->
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
 </head>
 
 <body>
     <div class="wrap">
+
+        <!-- HEADER -->
         <header>
-            <a class="brand" href="index.html">
+            <a class="brand" href="/">
                 <span class="mark" aria-hidden="true"></span>
                 <span>MCADAM STUDIOS</span>
             </a>
 
             <nav>
-                <a class="active" href="index.html">Home</a>
+                <a class="active" href="/">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="worlds.html">Worlds</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
 
+        <!-- HERO -->
         <section class="hero">
-            <div class="kicker"><span class="dot"></span> Designed by McAdam Studios</div>
+            <div class="kicker">
+                <span class="dot"></span> Independent Story Studio
+            </div>
+
             <h1>Where systems fail, people adapt.</h1>
+
             <p class="lead">
-                McAdam Studios is an independent studio building original IP across games, books, and digital media.
+                McAdam Studios is an independent studio building original IP across books and digital media.
                 We specialise in grounded worlds, hard choices, and stories that don’t flinch.
             </p>
 
             <div class="btnRow">
-                <a class="btn primary" href="worlds.html">Explore worlds</a>
-                <a class="btn" href="projects.html">See projects</a>
+                <a class="btn primary" href="out-of-the-ashes.html">Flagship IP</a>
+                <a class="btn" href="worlds.html">Explore worlds</a>
             </div>
         </section>
 
-        <section aria-label="Featured Book" class="feature">
+        <!-- FLAGSHIP FEATURE -->
+        <section class="feature" aria-label="Flagship IP">
             <div class="featureGrid">
+
+                <!-- BOOK COVER -->
                 <div class="featureMedia">
-                    <img src="assets/img/ash-and-embers-cover.jpg" alt="Ash and Embers book cover">
+                    <img src="assets/img/ash-and-embers-cover.jpg"
+                         alt="Ash and Embers — Out of the Ashes Book One cover" />
                 </div>
 
+                <!-- COPY -->
                 <div>
-                    <div class="kicker"><span class="dot"></span> Flagship IP — Out of the Ashes</div>
-                    <h2 class="featureTitle">Ash and Embers (Book 1)</h2>
-
-                    <p class="featureText">
-                        A grounded post-collapse survival story where leadership fractures, hope is expensive,
-                        and family is the last real law. Start the series with Book 1.
-                    </p>
-
-                    <div class="featureActions">
-                        <a class="btn primary" href=https://amzn.eu/d/aawGOGf target="_blank" rel="noopener">
-                            Buy on Amazon
-                        </a>
-                        <a class="btn" href="worlds.html">
-                            Explore the universe
-                        </a>
+                    <div class="kicker">
+                        <span class="dot"></span> Flagship IP — Out of the Ashes
                     </div>
 
-                    <span class="tag">Available now</span>
-                </div>
-            </div>
-        </section>
+                    <h2 class="featureTitle">Ash and Embers (Book One)</h2>
 
-        <footer>
-            <div>© <span id="y"></span> McAdam Studios</div>
-            <div>Built on GitHub Pages.</div>
-        </footer>
-    </div>
-
-    <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
-</body>
-</html>
+                    <p class="featureText">
+                        A grounded post-collapse survival story where leadership fractures,
+                        hope is expensive, and family becomes the last real law.
+                        This is the foundation of the <strong
