@@ -7,6 +7,17 @@
     --line: #1f2a3a;
     --accent: #f0c75e;
 }
+.logo {
+    height: 18px;
+    max-height: 18px;
+    width: auto;
+    max-width: 120px;
+    display: block;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -47,9 +58,9 @@ header {
 .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     font-weight: 900;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.6px;
 }
 
 .mark {
