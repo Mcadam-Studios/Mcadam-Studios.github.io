@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Projects | McAdam Studios</title>
-    <meta name="description" content="Active projects at McAdam Studios — story development, publishing, and digital production." />
+    <meta name="description" content="Projects and studio divisions at McAdam Studios — flagship story worlds and practical studio-built products." />
     <meta name="theme-color" content="#0b0f14" />
 
+    <!-- Open Graph -->
     <meta property="og:site_name" content="McAdam Studios" />
     <meta property="og:title" content="Projects | McAdam Studios" />
-    <meta property="og:description" content="Active projects at McAdam Studios." />
+    <meta property="og:description" content="Flagship IP, story worlds, and studio-built products." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mcadam-studios.github.io/projects.html" />
     <meta property="og:image" content="https://mcadam-studios.github.io/assets/img/og-image.png" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | McAdam Studios" />
+    <meta name="twitter:description" content="Flagship IP, story worlds, and studio-built products." />
     <meta name="twitter:image" content="https://mcadam-studios.github.io/assets/img/og-image.png" />
 
     <link rel="icon" href="assets/img/favicon.png" />
@@ -24,6 +28,8 @@
 
 <body>
     <div class="wrap">
+
+        <!-- Header -->
         <header>
             <a class="brand" href="/">
                 <img class="logo" src="assets/img/mcadam-studios-logo.png" alt="McAdam Studios logo" />
@@ -38,50 +44,111 @@
             </nav>
         </header>
 
+        <!-- Hero -->
         <section class="hero">
-            <div class="kicker"><span class="dot"></span> Projects</div>
-            <h1>What we’re building.</h1>
+            <div class="kicker"><span class="dot"></span> Studio Projects</div>
+            <h1>What we build — and why.</h1>
+
             <p class="lead">
-                Focused, shippable work. Flagship IP first — everything else supports the studio.
+                McAdam Studios operates across focused internal divisions.
+                Each exists to serve a clear purpose, but all are built with the same
+                design philosophy: clarity, consequence, and long-term thinking.
             </p>
+        </section>
+
+        <!-- Division: Story & IP -->
+        <section class="grid">
+            <div class="card">
+                <h2>Story Worlds & IP</h2>
+                <p>
+                    Original narrative universes designed for longevity and adaptation.
+                    These projects define the studio’s creative identity and long-term direction.
+                </p>
+                <span class="tag">Flagship Division</span>
+            </div>
         </section>
 
         <section class="grid twoUp">
             <div class="card">
-                <h2>Out of the Ashes (Flagship)</h2>
-                <p>Publishing and expansion of the universe: Book 2, prequel, and adaptation-ready materials.</p>
+                <h2>Out of the Ashes</h2>
+                <p>
+                    A grounded post-collapse survival drama focused on family, leadership under pressure,
+                    and the cost of hope when systems fail. This is the studio’s flagship IP and primary narrative universe.
+                </p>
                 <div class="btnRow">
-                    <a class="btn primary" href="out-of-the-ashes.html">Pitch page</a>
+                    <a class="btn primary" href="out-of-the-ashes.html">View pitch</a>
                     <a class="btn" href="worlds.html">World hub</a>
                 </div>
-                <span class="tag">Primary</span>
+                <span class="tag">Flagship IP</span>
             </div>
 
             <div class="card">
                 <h2>The CryBabies</h2>
-                <p>Adult comedy skits and comic storytelling built around recurring characters and verbal warfare.</p>
+                <p>
+                    An adult comedy IP built around recurring characters, verbal sparring,
+                    and escalating stupidity. A tonal counterbalance to the studio’s dramatic work.
+                </p>
                 <span class="tag">Comedy / Shorts</span>
             </div>
         </section>
 
+        <!-- Division: Studio Products -->
         <section class="grid">
             <div class="card">
-                <h2>Studio Pipeline</h2>
+                <h2>Studio Products & Tools</h2>
                 <p>
-                    Brand, publishing, website, and storefront systems — built so releases can ship repeatedly without chaos.
+                    Practical products developed alongside the studio’s creative work.
+                    These tools are designed with the same discipline as our story worlds —
+                    calm, structured, and grounded in real use.
                 </p>
-                <span class="tag">Operations</span>
+                <span class="tag">Practical Division</span>
             </div>
         </section>
 
+        <section class="grid twoUp">
+            <div class="card">
+                <h2>ADHD & Autism Flash Card Systems</h2>
+                <p>
+                    Structured flash card kits designed to support focus, emotional regulation,
+                    and routine for neurodivergent children. Built from lived experience,
+                    tested for clarity, and designed to reduce cognitive overload.
+                </p>
+                <span class="tag">Educational Tools</span>
+            </div>
+
+            <div class="card">
+                <h2>Future Studio Products</h2>
+                <p>
+                    Additional educational, digital, and creative tools are in development.
+                    These products are designed to be genuinely useful — not filler —
+                    and are only released when they meet studio standards.
+                </p>
+                <span class="tag">In Development</span>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="grid">
+            <div class="card">
+                <h2>One Studio, One Philosophy</h2>
+                <p>
+                    Whether building story worlds or practical tools, McAdam Studios follows the same principles:
+                    intention over noise, systems that hold under pressure, and work designed to last.
+                </p>
+                <span class="tag">Studio Ethos</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer>
             <div>© <span id="year"></span> McAdam Studios</div>
-            <div><a href="contact.html">Contact</a></div>
+            <div><a href="contact.html">Business enquiries</a></div>
         </footer>
+
     </div>
 
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
