@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Worlds | McAdam Studios</title>
-    <meta name="description" content="Story worlds by McAdam Studios — flagship IP and recurring universes." />
+    <meta name="description" content="Explore the story worlds of McAdam Studios — flagship universe Out of the Ashes and upcoming releases." />
     <meta name="theme-color" content="#0b0f14" />
 
+    <!-- Open Graph -->
     <meta property="og:site_name" content="McAdam Studios" />
     <meta property="og:title" content="Worlds | McAdam Studios" />
-    <meta property="og:description" content="Story worlds by McAdam Studios — flagship IP and recurring universes." />
+    <meta property="og:description" content="Explore the story worlds of McAdam Studios — flagship universe Out of the Ashes and upcoming releases." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mcadam-studios.github.io/worlds.html" />
     <meta property="og:image" content="https://mcadam-studios.github.io/assets/img/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Worlds | McAdam Studios" />
+    <meta name="twitter:description" content="Explore the story worlds of McAdam Studios — flagship universe Out of the Ashes and upcoming releases." />
+    <meta name="twitter:image" content="https://mcadam-studios.github.io/assets/img/og-image.png" />
 
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/site.css?v=1" />
@@ -21,9 +28,11 @@
 
 <body>
     <div class="wrap">
+
+        <!-- Header -->
         <header>
             <a class="brand" href="/">
-                <img class="logo" src="assets/img/mcadam-studios-logo.png" alt="McAdam Studios logo" />
+                <img class="logo" src="assets/img/mcadam-header-logo.png" alt="McAdam Studios logo" />
                 <span>MCADAM STUDIOS</span>
             </a>
 
@@ -35,40 +44,105 @@
             </nav>
         </header>
 
+        <!-- Hero -->
         <section class="hero">
-            <div class="kicker"><span class="dot"></span> Worlds</div>
-            <h1>Universes with rules.</h1>
+            <div class="kicker"><span class="dot"></span> Story Worlds</div>
+            <h1>Universes built to last.</h1>
+
             <p class="lead">
-                Flagship drama, recurring comedy, and expandable IP built to scale across formats.
+                McAdam Studios develops original narrative worlds designed for longevity —
+                grounded stakes, hard choices, and characters pushed to the edge of what they can carry.
             </p>
+
+            <p class="muted">
+                Flagship universe: <strong>Out of the Ashes</strong>. New entries will appear here as they’re announced.
+            </p>
+        </section>
+
+        <!-- Flagship World -->
+        <section class="grid">
+            <div class="card">
+                <h2>Out of the Ashes</h2>
+                <p>
+                    A post-collapse survival universe where leadership fractures, hope is expensive,
+                    and family becomes the last real law. The series follows survivors navigating broken systems,
+                    shifting loyalties, and the thin line between protection and control.
+                </p>
+                <div class="btnRow">
+                    <a class="btn primary" href="out-of-the-ashes.html">View pitch</a>
+                    <a class="btn" href="contact.html">Partnership enquiries</a>
+                </div>
+                <span class="tag">Flagship Universe</span>
+            </div>
+        </section>
+
+        <!-- Books in the universe -->
+        <section class="grid twoUp">
+            <div class="card">
+                <h2>Ash and Embers (Book One)</h2>
+                <p>
+                    The starting point. A grounded survival story where difficult decisions and internal fractures
+                    determine who makes it to safety — and who doesn’t.
+                </p>
+                <div class="btnRow">
+                    <!-- Update this Amazon link if needed -->
+                    <a class="btn primary" href="https://amzn.eu/d/4bywxqb" target="_blank" rel="noopener">Buy on Amazon</a>
+                    <a class="btn" href="out-of-the-ashes.html">Explore the universe</a>
+                </div>
+                <span class="tag">Available Now</span>
+            </div>
+
+            <div class="card">
+                <h2>Children of the Collapse (Book Two)</h2>
+                <p>
+                    The next chapter in the Out of the Ashes series. The world evolves, the stakes rise,
+                    and survival becomes less about shelter — and more about identity.
+                </p>
+                <span class="tag">In Development</span>
+            </div>
+        </section>
+
+        <!-- Coming Soon: Prequel -->
+        <section class="grid">
+            <div class="card">
+                <h2>Coming Soon</h2>
+                <p class="muted">
+                    New releases and expansions in the Out of the Ashes timeline.
+                </p>
+            </div>
         </section>
 
         <section class="grid twoUp">
             <div class="card">
-                <h2>Out of the Ashes</h2>
-                <p>Grounded post-collapse survival drama. Family-led. Leadership fractures. Hope has a cost.</p>
-                <div class="btnRow">
-                    <a class="btn primary" href="out-of-the-ashes.html">View pitch</a>
-                    <a class="btn" href="contact.html">Rights enquiries</a>
-                </div>
-                <span class="tag">Flagship</span>
+                <h2>Flags in the Fire (Prequel)</h2>
+                <p>
+                    The prequel that documents the world before the collapse — government greed,
+                    public pressure, propaganda, and the spark that turns unrest into a movement.
+                    This story sets the foundations for everything that follows.
+                </p>
+                <span class="tag">Coming Soon</span>
             </div>
 
             <div class="card">
-                <h2>The CryBabies</h2>
-                <p>Adult comedy chaos: recurring characters, running gags, and verbal scraps that escalate stupidly fast.</p>
-                <span class="tag">Comedy / Shorts</span>
+                <h2>More Worlds (in time)</h2>
+                <p>
+                    Additional worlds and IP are incubated inside the studio and only announced when they’re ready.
+                    The goal is longevity, not noise.
+                </p>
+                <span class="tag">Studio Pipeline</span>
             </div>
         </section>
 
+        <!-- Footer -->
         <footer>
             <div>© <span id="year"></span> McAdam Studios</div>
-            <div><a href="projects.html">Projects</a></div>
+            <div><a href="contact.html">Business enquiries</a></div>
         </footer>
+
     </div>
 
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
