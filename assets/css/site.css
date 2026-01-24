@@ -286,3 +286,9 @@ footer {
         padding: 18px;
     }
 }
+.muted {
+    color: #9aa4b2;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
