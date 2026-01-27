@@ -60,7 +60,7 @@ header {
     display: block;
     object-fit: contain;
     opacity: 0.92;
-    #E6E9EE;
+    
 }
 
 nav {
@@ -292,4 +292,35 @@ footer {
     font-size: 0.95rem;
     line-height: 1.5;
 }
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+}
+
+.footer-right{
+  display:flex;
+  gap:14px;
+}
+
+.social{
+  display:inline-flex;
+  width:18px;
+  height:18px;
+  color:#9aa4b2;
+  transition:color .2s ease, transform .2s ease;
+}
+
+.social svg{
+  width:100%;
+  height:100%;
+  fill:currentColor;
+}
+
+.social:hover{
+  color:#e6e9ee;
+  transform:translateY(-1px);
+}
+
 
