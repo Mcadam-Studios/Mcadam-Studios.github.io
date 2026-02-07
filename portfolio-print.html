@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio — Print & Design | McAdam Studios</title>
+  <meta name="description" content="McAdam Studios portfolio: invitations, flyers, business cards, and signage." />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="brand" href="/">
+        <img class="logo" src="assets/img/mcadam-header-logo.png" alt="McAdam Studios logo" />
+        <span>MCADAM STUDIOS</span>
+      </a>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="worlds.html">Worlds</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="kicker"><span class="dot"></span> Portfolio</div>
+      <h1>Print & Design</h1>
+      <p class="lead">Client-ready assets and print products.</p>
+
+      <div class="btnRow">
+        <a class="btn" href="portfolio.html">Back to Portfolio</a>
+        <a class="btn" href="portfolio-products.html">Products & Packs</a>
+        <a class="btn" href="portfolio-web.html">Web & Social</a>
+      </div>
+    </section>
+
+    <section class="cardGrid">
+      <div class="pCard"><div class="pCardInner">
+        <h2 class="pTitle">Birthday Invitations</h2>
+        <p class="pMeta">Ticket-style, themed invites, print-ready layouts.</p>
+        <span class="badge">Design</span>
+      </div></div>
+
+      <div class="pCard"><div class="pCardInner">
+        <h2 class="pTitle">Holy Communion Invitations</h2>
+        <p class="pMeta">Elegant layouts, clean typography, print-safe exports.</p>
+        <span class="badge">Design</span>
+      </div></div>
+
+      <div class="pCard"><div class="pCardInner">
+        <h2 class="pTitle">Leaflets / Flyers</h2>
+        <p class="pMeta">Promotional flyers, event leaflets, service menus.</p>
+        <span class="badge">Print</span>
+      </div></div>
+
+      <div class="pCard"><div class="pCardInner">
+        <h2 class="pTitle">Business Cards</h2>
+        <p class="pMeta">Branded card systems, consistent templates.</p>
+        <span class="badge">Print</span>
+      </div></div>
+
+      <div class="pCard"><div class="pCardInner">
+        <h2 class="pTitle">Business Signs</h2>
+        <p class="pMeta">Signage layouts designed for clarity and distance readability.</p>
+        <span class="badge">Signage</span>
+      </div></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">© <span id="year"></span> McAdam Studios</div>
+      <div class="footer-right">
+        <a class="btn" href="contact.html">Enquiries</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

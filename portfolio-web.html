@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio — Web & Social | McAdam Studios</title>
+  <meta name="description" content="McAdam Studios portfolio: websites and social media assets." />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="brand" href="/">
+        <img class="logo" src="assets/img/mcadam-header-logo.png" alt="McAdam Studios logo" />
+        <span>MCADAM STUDIOS</span>
+      </a>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="worlds.html">Worlds</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="kicker"><span class="dot"></span> Portfolio</div>
+      <h1>Web & Social</h1>
+      <p class="lead">Web builds and social presence systems.</p>
+
+      <div class="btnRow">
+        <a class="btn" href="portfolio.html">Back to Portfolio</a>
+        <a class="btn" href="portfolio-products.html">Products & Packs</a>
+        <a class="btn" href="portfolio-print.html">Print & Design</a>
+      </div>
+    </section>
+
+    <section class="cardGrid">
+      <div class="pCard">
+        <div class="pCardInner">
+          <h2 class="pTitle">Websites</h2>
+          <p class="pMeta">Landing pages, portfolio sites, branded web presence.</p>
+          <span class="badge">Digital</span>
+        </div>
+      </div>
+
+      <div class="pCard">
+        <div class="pCardInner">
+          <h2 class="pTitle">Socials</h2>
+          <p class="pMeta">Brand assets, banners, promo templates, consistent design language.</p>
+          <span class="badge">Digital</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">© <span id="year"></span> McAdam Studios</div>
+      <div class="footer-right">
+        <a class="btn" href="contact.html">Enquiries</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

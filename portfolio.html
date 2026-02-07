@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio | McAdam Studios</title>
+  <meta name="description" content="Portfolio of McAdam Studios work — published products, printable packs, design work, and web/social builds." />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <meta property="og:site_name" content="McAdam Studios" />
+  <meta property="og:title" content="Portfolio | McAdam Studios" />
+  <meta property="og:description" content="Published products, printable packs, design work, and web/social builds." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mcadam-studios.github.io/portfolio.html" />
+  <meta property="og:image" content="https://mcadam-studios.github.io/assets/img/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://mcadam-studios.github.io/assets/img/og-image.png" />
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/site.css?v=1" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="brand" href="/">
+        <img class="logo" src="assets/img/mcadam-header-logo.png" alt="McAdam Studios logo" />
+        <span>MCADAM STUDIOS</span>
+      </a>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="worlds.html">Worlds</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="kicker"><span class="dot"></span> Portfolio</div>
+      <h1>Work shipped. Work in motion.</h1>
+
+      <p class="lead">
+        A broad catalogue across physical products, printable packs, design work, and digital builds.
+        Organised into focused collections so it stays readable.
+      </p>
+
+      <div class="btnRow">
+        <a class="btn primary" href="portfolio-products.html">Products & Packs</a>
+        <a class="btn" href="portfolio-print.html">Print & Design</a>
+        <a class="btn" href="portfolio-web.html">Web & Social</a>
+      </div>
+    </section>
+
+    <section class="cardGrid">
+      <div class="pCard">
+        <div class="pCardInner">
+          <h2 class="pTitle">Products & Packs</h2>
+          <p class="pMeta">Published packs and printable toolkits.</p>
+          <span class="badge good">Featured</span>
+          <div class="pActions">
+            <a class="btn primary" href="portfolio-products.html">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pCard">
+        <div class="pCardInner">
+          <h2 class="pTitle">Print & Design</h2>
+          <p class="pMeta">Invitations, flyers, cards, signage.</p>
+          <span class="badge">Collection</span>
+          <div class="pActions">
+            <a class="btn primary" href="portfolio-print.html">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pCard">
+        <div class="pCardInner">
+          <h2 class="pTitle">Web & Social</h2>
+          <p class="pMeta">Websites, landing pages, social assets.</p>
+          <span class="badge">Collection</span>
+          <div class="pActions">
+            <a class="btn primary" href="portfolio-web.html">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">© <span id="year"></span> McAdam Studios</div>
+      <div class="footer-right">
+        <a class="btn" href="contact.html">Enquiries</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

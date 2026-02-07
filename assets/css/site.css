@@ -322,5 +322,69 @@ footer {
   color:#e6e9ee;
   transform:translateY(-1px);
 }
+/* Portfolio cards */
+.cardGrid{
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  gap:16px;
+  margin-top:16px;
+}
+
+.pCard{
+  grid-column:span 12;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.pCardInner{
+  padding:18px;
+}
+
+.pTitle{
+  margin:0 0 8px;
+  font-size:18px;
+}
+
+.pMeta{
+  margin:0 0 10px;
+  color:var(--muted);
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  font-weight:800;
+  font-size:12px;
+  background:rgba(255,255,255,.03);
+  color:var(--muted);
+}
+
+.badge.good{
+  border-color:rgba(106, 240, 170, .25);
+  background:rgba(106, 240, 170, .08);
+  color:#bfead0;
+}
+
+.badge.soon{
+  border-color:rgba(240, 199, 94, .25);
+  background:rgba(240, 199, 94, .08);
+  color:#f2ddb0;
+}
+
+.pActions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+
+@media (min-width: 860px){
+  .pCard{ grid-column:span 6; }
+}
 
 
