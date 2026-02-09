@@ -387,4 +387,17 @@ footer {
   .pCard{ grid-column:span 6; }
 }
 
+.pThumb{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+  border-bottom:1px solid var(--line);
+}
+
+@media (min-width: 860px){
+  .pThumb{
+    height:220px;
+  }
+}
 
