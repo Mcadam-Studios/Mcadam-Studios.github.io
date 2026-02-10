@@ -401,3 +401,150 @@ footer {
   }
 }
 
+/* ===== Portfolio Gallery Modal ===== */
+.galleryModal{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+}
+
+.galleryModal.isOpen{ display:block; }
+
+.galleryBackdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.72);
+}
+
+.galleryPanel{
+  position:relative;
+  max-width:1100px;
+  margin:32px auto;
+  background:rgba(12,16,22,.95);
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:0 24px 80px rgba(0,0,0,.55);
+  overflow:hidden;
+}
+
+.galleryTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  padding:16px 18px;
+  border-bottom:1px solid var(--line);
+}
+
+.galleryTitle{
+  margin:0;
+  font-size:18px;
+}
+
+.gallerySub{
+  margin:6px 0 0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.galleryClose{
+  appearance:none;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  border-radius:12px;
+  padding:8px 10px;
+  cursor:pointer;
+}
+
+.galleryBody{
+  padding:16px 18px 22px;
+}
+
+.galleryGrid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:12px;
+}
+
+@media (min-width: 720px){
+  .galleryGrid{ grid-template-columns:repeat(4, 1fr); }
+}
+
+.gItem{
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  background:rgba(255,255,255,.03);
+  cursor:pointer;
+}
+
+.gThumb{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  display:block;
+  background:#0b0f14;
+}
+
+.gCap{
+  padding:10px 10px 12px;
+}
+
+.gName{
+  margin:0;
+  font-weight:800;
+  font-size:13px;
+}
+
+.gCompany{
+  margin:6px 0 0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* Fullscreen viewer (optional) */
+.viewer{
+  position:fixed;
+  inset:0;
+  z-index:10000;
+  display:none;
+}
+
+.viewer.isOpen{ display:block; }
+
+.viewerBackdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.84);
+}
+
+.viewerImgWrap{
+  position:relative;
+  max-width:1200px;
+  margin:28px auto;
+  padding:0 14px;
+}
+
+.viewerImg{
+  width:100%;
+  height:auto;
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:#0b0f14;
+}
+
+.viewerClose{
+  position:absolute;
+  top:10px;
+  right:22px;
+  appearance:none;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+  border-radius:12px;
+  padding:8px 10px;
+  cursor:pointer;
+}
+

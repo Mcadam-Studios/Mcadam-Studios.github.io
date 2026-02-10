@@ -18,7 +18,7 @@
     <header>
       <a class="brand" href="/">
         <img class="logo" src="assets/img/mcadam-studios-logo.png" alt="McAdam Studios logo" />
-        <span>MCADAM STUDIOS</span>
+      
       </a>
 
       <nav>
@@ -46,7 +46,7 @@
       <section class="cardGrid">
 
   <!-- Websites -->
-  <div class="pCard">
+  <div class="blockCard">
     <img class="pThumb" src="assets/img/portfolio/websites.jpg" alt="Website builds and landing pages">
     <div class="pCardInner">
       <h2 class="pTitle">Websites</h2>
@@ -56,7 +56,7 @@
   </div>
 
   <!-- Socials -->
-  <div class="pCard">
+  <div class="blockCard">
     <img class="pThumb" src="assets/img/portfolio/socials.jpg" alt="Social media assets and templates">
     <div class="pCardInner">
       <h2 class="pTitle">Websites / Socials</h2>
@@ -81,5 +81,34 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <!-- ===== Gallery Modal ===== -->
+<div id="galleryModal" class="galleryModal" aria-hidden="true">
+  <div class="galleryBackdrop" data-close></div>
+
+  <div class="galleryPanel" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+    <div class="galleryTop">
+      <div>
+        <h2 id="galleryTitle" class="galleryTitle">Gallery</h2>
+        <p id="gallerySub" class="gallerySub"> </p>
+      </div>
+      <button class="galleryClose" type="button" data-close>Close</button>
+    </div>
+
+    <div class="galleryBody">
+      <div id="galleryGrid" class="galleryGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Fullscreen Viewer ===== -->
+<div id="viewer" class="viewer" aria-hidden="true">
+  <div class="viewerBackdrop" data-viewer-close></div>
+  <div class="viewerImgWrap">
+    <button class="viewerClose" type="button" data-viewer-close>Close</button>
+    <img id="viewerImg" class="viewerImg" src="" alt="">
+  </div>
+</div>
+<script src="assets/js/portfolio-gallery.js"></script>
+
 </body>
 </html>
