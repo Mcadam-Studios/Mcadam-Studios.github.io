@@ -53,10 +53,10 @@ header {
 }
 
 .logo {
-    height: 100px;
-    max-height: 100px;
+    height: 300px;
+    max-height: 400px;
     width: auto;
-    max-width: 140px;
+    max-width: 500px;
     display: block;
     object-fit: contain;
     opacity: 0.92;
