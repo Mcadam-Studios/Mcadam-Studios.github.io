@@ -550,4 +550,50 @@ footer {
   padding:8px 10px;
   cursor:pointer;
 }
+/* ===== Mobile header + nav fix ===== */
+@media (max-width: 720px){
+
+  /* Stack the header instead of side-by-side columns */
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* Keep the brand neat */
+  .brand{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .brand .logo{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  /* Nav becomes a wrapped row instead of a vertical column */
+  nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  nav a{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+
+  /* Avoid any accidental overflow that causes sideways scrolling */
+  .wrap{
+    overflow-x: hidden;
+  }
+}
+
 
