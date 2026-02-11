@@ -54,7 +54,7 @@ header {
 
 .logo {
     height: 300px;
-    max-height: 400px;
+    max-height: 170px;
     width: auto;
     max-width: 500px;
     display: block;
@@ -68,6 +68,9 @@ nav {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: flex-end;
+    position: relative
+  ;
+    
 }
 
     nav a {
