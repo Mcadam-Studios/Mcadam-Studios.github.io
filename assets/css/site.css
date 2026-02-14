@@ -12,16 +12,23 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background: radial-gradient(1200px 700px at 15% 10%, rgba(32, 78, 140, 0.35), transparent 60%),
+              radial-gradient(900px 600px at 85% 25%, rgba(18, 60, 120, 0.25), transparent 55%),
+              linear-gradient(180deg, #070a10 0%, #070a10 100%);
+  background-attachment: fixed;
 }
 
 body {
     margin: 0;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     color: var(--text);
-    background: radial-gradient(1200px 700px at 20% 0%, #12213a 0%, var(--bg) 60%), radial-gradient(900px 600px at 90% 10%, #1b1a2e 0%, transparent 55%), var(--bg);
-    line-height: 1.5;
+       line-height: 1.5;
 }
 
 a {
@@ -649,5 +656,14 @@ footer {
 .blockCard{
   width: auto;
   max-width: 100%;
+}
+.blockGrid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:20px;
+}
+
+@media (max-width: 900px){
+  .blockGrid{ grid-template-columns:1fr; }
 }
 
