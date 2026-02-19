@@ -667,3 +667,182 @@ footer {
   .blockGrid{ grid-template-columns:1fr; }
 }
 
+/* Make every card behave like a real component */
+.blockCard{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Consistent thumbnail shape */
+.pThumb{
+  width: 100%;
+  aspect-ratio: 16 / 10;      /* pick your vibe: 16/10 or 4/3 */
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+}
+
+/* Make inner content consistent and push buttons to bottom */
+.pCardInner{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 14px;
+}
+
+/* Prevent titles/descriptions from making random tall cards */
+.pTitle{
+  min-height: 2.6em;          /* keeps titles aligned */
+}
+
+.pMeta{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;      /* clamps description to 3 lines */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 4.2em;          /* keeps cards aligned */
+}
+
+/* Push actions to the bottom so buttons line up */
+.pActions{
+  margin-top: auto;
+}
+.pActions{
+  display: flex;
+  gap: 10px;
+}
+.pActions .btn{
+  flex: 1;
+  text-align: center;
+}
+/* =========================================================
+   PORTFOLIO ONLY — SAFE OVERRIDES
+   Applies ONLY when <body class="portfolioPage">
+   Paste at the bottom of assets/css/site.css
+   ========================================================= */
+
+body.portfolioPage .cardGrid{
+  margin-top: 28px;
+}
+
+/* Grid wrapper */
+body.portfolioPage .blockGrid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px){
+  body.portfolioPage .blockGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px){
+  body.portfolioPage .blockGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card component */
+body.portfolioPage .blockCard{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Thumbnail normalisation: same frame for all images */
+body.portfolioPage .pThumb{
+  width: 100%;
+  aspect-ratio: 16 / 10;  /* consistent look across flyers/cards/etc */
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+}
+
+/* Inner layout + consistent alignment */
+body.portfolioPage .pCardInner{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 14px;
+}
+
+/* Titles aligned (avoids random height jumps) */
+body.portfolioPage .pTitle{
+  margin: 0 0 8px 0;
+  line-height: 1.15;
+  min-height: 2.4em; /* keeps rows aligned */
+}
+
+/* Description clamp for consistent card height */
+body.portfolioPage .pMeta{
+  margin: 0 0 12px 0;
+  opacity: 0.9;
+  line-height: 1.55;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;  /* clamp to 3 lines */
+  line-clamp: 3;
+  overflow: hidden;
+
+  min-height: 4.6em;      /* aligns rows even if shorter text */
+}
+
+/* Badge styling (safe and consistent) */
+body.portfolioPage .badge{
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.05);
+  font-size: 0.85rem;
+  opacity: 0.95;
+  margin-bottom: 12px;
+}
+
+/* Actions pinned to bottom so buttons line up */
+body.portfolioPage .pActions{
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons consistent sizing */
+body.portfolioPage .pActions .btn{
+  flex: 1;
+  text-align: center;
+  border-radius: 14px;
+  padding: 12px 14px;
+  white-space: nowrap;
+}
+
+/* Hover polish (subtle, professional) */
+@media (hover:hover){
+  body.portfolioPage .blockCard{
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  }
+  body.portfolioPage .blockCard:hover{
+    transform: translateY(-3px);
+    border-color: rgba(255,255,255,0.14);
+    background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.035));
+  }
+}
+
+/* If an image fails to load, avoid ugly broken icon spacing */
+body.portfolioPage img.pThumb{
+  color: transparent; /* hides alt text rendering in some browsers */
+}
+
