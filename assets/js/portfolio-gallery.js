@@ -75,7 +75,8 @@
       items: [
         { src: "assets/img/menus/drinks/yesspleasemumma/VIPMenuYessPleaseMumma.png", name: "Drinks Menu", company: "Yess Please Mumma" },
         { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma1.png", name: "Drinks Menu", company: "Yes Please Mumma" },
-        { src: "assets/img/menus/drinks/leisureleague/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" },  ]
+        { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" }
+      ]
     },
 
     "logos": {
@@ -85,9 +86,10 @@
         { src: "assets/img/logos/lacuts/lacutslogo.jpg", name: "Logo", company: "La Cuts" },
         { src: "assets/img/logos/lillieslodge/lillieslodge-logo.png", name: "Logo", company: "Lilac" },
         { src: "assets/img/logos/cmcollectibles/cmcollectibles-logo.png", name: "Logo", company: "CM Collectibles" },  
-        { src: "assets/img/logos/wdconstruction/wdconstruction-logo.png", name: "Logo", company: "WD Construction" }, ]
-       
-  },
+        { src: "assets/img/logos/wdconstruction/wdconstruction-logo.png", name: "Logo", company: "WD Construction" }
+      ]
+    }
+  }
 
   function openModal(categoryKey){
     const cat = GALLERIES[categoryKey];
