@@ -40,7 +40,7 @@
       title: "Leaflets / Flyers",
       sub: "A selection of flyer and leaflet designs.",
       items: [
-        { src: "assets/img/leaflets/flyers/b&hgroundworks/B&H Groundwork Flyers.jpg", name: "Flyer", company: "B&H Groundwork" },
+        { src: "assets/img/leaflets/flyers/bhgroundworks/b-and-h-groundwork-flyers.jpg", name: "Flyer", company: "B&H Groundwork" },
             { src: "assets/img/leaflets/flyers/leisureleague/Leisure League Flyers.jpg", name: "Leaflet", company: "Leisure League" },
             { src: "assets/img/leaflets/flyers/tridenttrafficflyers/tridentflyerfront.png", name: "Flyer", company: "Trident Traffic Management" },
                 { src: "assets/img/leaflets/flyers/tridenttrafficflyers/tridentflyerback.png", name: "Flyer", company: "Trident Traffic Management" },
