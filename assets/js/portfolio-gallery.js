@@ -16,7 +16,7 @@
   // - company: company name shown under thumbnail
   // Tip: keep files in /assets/img/portfolio/business-cards/... etc.
   const GALLERIES = {
-  
+    
     "business-cards": {
       title: "Business Cards",
       sub: "Click a thumbnail to view full size.",
@@ -54,7 +54,7 @@
         { src: "assets/img/portfolio/signs/company-a-sign.jpg", name: "Sign", company: "Company A" },
       ]
     },
-    "birthday-invitations": {
+    "birthday_invitations": {
       title: "Birthday Invitations",
       sub: "Ticket-style and themed invitation designs.",
       items: [
