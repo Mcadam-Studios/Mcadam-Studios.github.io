@@ -979,3 +979,41 @@ body.portfolioPage img.pThumb{
 .galleryModal .thumbBtn.isActive{
   border-color: rgba(255,255,255,0.30);
 }
+/* =========================
+   LOCK GALLERY IMAGE SIZE
+   ========================= */
+
+/* Make modal fill screen */
+.galleryModal{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+}
+
+/* Prevent body scrolling while open */
+body.galleryOpen{
+  overflow: hidden;
+}
+
+/* Lock image container size */
+.galleryContent{
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Image always fits screen */
+.galleryContent img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   /* IMPORTANT */
+  display: block;
+  border-radius: 12px;
+}
