@@ -76,18 +76,18 @@
         { src: "assets/img/menus/drinks/yesspleasemumma/VIPMenuYessPleaseMumma.png", name: "Drinks Menu", company: "Yess Please Mumma" },
         { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma1.png", name: "Drinks Menu", company: "Yes Please Mumma" },
         { src: "assets/img/menus/drinks/leisureleague/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" },  ]
-    }
+    },
 
     "logos": {
       title: "Logos",
       sub: "Branded identity systems with scalable vector graphics.",
       items: [
-        { src: "assets/img/logos/lacutslogo.jpg", name: "Logo", company: "Company A" },
-        { src: "assets/img/portfolio/logos/logo-2.png", name: "Logo", company: "Company B" },
-        { src: "assets/img/portfolio/logos/logo-3.png", name: "Logo", company: "Company C" },  ]
-    }
+        { src: "assets/img/logos/lacuts/lacutslogo.jpg", name: "Logo", company: "La Cuts" },
+        { src: "assets/img/logos/lillieslodge/lillieslodge-logo.png", name: "Logo", company: "Lilac" },
+        { src: "assets/img/logos/cmcollectibles/cmcollectibles-logo.png", name: "Logo", company: "CM Collectibles" },  
+        { src: "assets/img/logos/wdconstruction/wdconstruction-logo.png", name: "Logo", company: "WD Construction" }, ]
        
-  };
+  },
 
   function openModal(categoryKey){
     const cat = GALLERIES[categoryKey];
