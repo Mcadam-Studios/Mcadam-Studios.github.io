@@ -58,14 +58,14 @@
       title: "Birthday Invitations",
       sub: "Ticket-style and themed invitation designs.",
       items: [
-        { src: "assets/img/portfolio/invitations/birthday-1.jpg", name: "Invitation", company: "Private Client" },
+        { src: "assets/img/invitations/birthdayinvites/k-pop-theme-roller-bday-invite.png", name: "Invitation", company: "Private Client" },
       ]
     },
-    "holy-communion-invitations": {
+    "holy_communion": {
       title: "Holy Communion Invitations",
       sub: "Elegant layouts and print-ready exports.",
       items: [
-        { src: "assets/img/portfolio/invitations/communion-1.jpg", name: "Invitation", company: "Private Client" },
+        { src: "assets/img/invitations/holycominvites/holy-Comunion-Invitation.png", name: "Invitation", company: "Private Client" },
       ]
     },
 
@@ -74,8 +74,8 @@
       sub: "Cocktail and beverage menus with elegant typography.",
       items: [
         { src: "assets/img/menus/drinks/yesspleasemumma/VIPMenuYessPleaseMumma.png", name: "Drinks Menu", company: "Yess Please Mumma" },
-        { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma1.png", name: "Drinks Menu", company: "Yes Please Mumma" },
-        { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" }
+        { src: "assets/img/menus/drinks/yesspleasemumma/yespleasemamma1.png", name: "Drinks Menu", company: "Yes Please Mumma" },
+        { src: "assets/img/menus/drinks/yesspleasemumma/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" }
       ]
     },
 
@@ -84,9 +84,9 @@
       sub: "Branded identity systems with scalable vector graphics.",
       items: [
         { src: "assets/img/logos/lacuts/lacutslogo.jpg", name: "Logo", company: "La Cuts" },
-        { src: "assets/img/logos/lillieslodge/lillieslodge-logo.png", name: "Logo", company: "Lilac" },
-        { src: "assets/img/logos/cmcollectibles/cmcollectibles-logo.png", name: "Logo", company: "CM Collectibles" },  
-        { src: "assets/img/logos/wdconstruction/wdconstruction-logo.png", name: "Logo", company: "WD Construction" }
+        { src: "assets/img/logos/lillieslodge/lillieslodgelogo.jpg", name: "Logo", company: "Lilac" },
+        { src: "assets/img/logos/cmcollectibles/cmcollectibleslogo.jpg", name: "Logo", company: "CM Collectibles" },  
+        { src: "assets/img/logos/wdconstruction/wdconstruction.jpg", name: "Logo", company: "WD Construction" }
       ]
     }
   }
