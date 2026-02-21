@@ -16,6 +16,7 @@
   // - company: company name shown under thumbnail
   // Tip: keep files in /assets/img/portfolio/business-cards/... etc.
   const GALLERIES = {
+  
     "business-cards": {
       title: "Business Cards",
       sub: "Click a thumbnail to view full size.",
@@ -33,6 +34,7 @@
 
 
       ]
+
     },
     "leaflets-flyers": {
       title: "Leaflets / Flyers",
@@ -65,7 +67,8 @@
       items: [
         { src: "assets/img/portfolio/invitations/communion-1.jpg", name: "Invitation", company: "Private Client" },
       ]
-    }
+    },
+
     "drinks-menus": {
       title: "Drinks Menus",
       sub: "Cocktail and beverage menus with elegant typography.",
