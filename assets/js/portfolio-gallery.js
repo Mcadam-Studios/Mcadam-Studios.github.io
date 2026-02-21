@@ -16,14 +16,14 @@
   // - company: company name shown under thumbnail
   // Tip: keep files in /assets/img/portfolio/business-cards/... etc.
   const GALLERIES = {
-    
+
     "business-cards": {
       title: "Business Cards",
       sub: "Click a thumbnail to view full size.",
       items: [
         { src: "assets/img/business_cards/aat_tyre_mchanics/aat_front.jpg", name: "Business Card", company: "AAT Tyre Mechanics" },
         { src: "assets/img/business_cards/aat_tyre_mchanics/aat_back.jpg", name: "Business Card", company: "AAT Tyre Mechanics" },
-        { src: "assets/img/business_cards/dovervaleting&design/dovervalet3DMockup.png", name: "Business Card", company: "Dover Valeting & Design" },
+        { src: "assets/img/business_cards/dovervaleting&design/dovervaletmockup.png", name: "Business Card", company: "Dover Valeting & Design" },
         { src: "assets/img/business_cards/dovervaleting&design/dovervaletfront.png", name: "Business Card", company: "Dover Valeting & Design" },
         { src: "assets/img/business_cards/dovervaleting&design/dovervaletback.png", name: "Business Card", company: "Dover Valeting & Design" },
          { src: "assets/img/business_cards/tridenttrafficmanagement/trident3dmockup.png", name: "Business Card", company: "Trident Traffic Management" },
@@ -76,6 +76,15 @@
         { src: "assets/img/menus/drinks/yesspleasemumma/VIPMenuYessPleaseMumma.png", name: "Drinks Menu", company: "Yess Please Mumma" },
         { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma1.png", name: "Drinks Menu", company: "Yes Please Mumma" },
         { src: "assets/img/menus/drinks/leisureleague/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" },  ]
+    }
+
+    "logos": {
+      title: "Logos",
+      sub: "Branded identity systems with scalable vector graphics.",
+      items: [
+        { src: "assets/img/logos/lacutslogo.jpg", name: "Logo", company: "Company A" },
+        { src: "assets/img/portfolio/logos/logo-2.png", name: "Logo", company: "Company B" },
+        { src: "assets/img/portfolio/logos/logo-3.png", name: "Logo", company: "Company C" },  ]
     }
        
   };
