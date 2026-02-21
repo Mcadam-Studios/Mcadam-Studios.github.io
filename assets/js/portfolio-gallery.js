@@ -66,6 +66,15 @@
         { src: "assets/img/portfolio/invitations/communion-1.jpg", name: "Invitation", company: "Private Client" },
       ]
     }
+    "drinks-menus": {
+      title: "Drinks Menus",
+      sub: "Cocktail and beverage menus with elegant typography.",
+      items: [
+        { src: "assets/img/menus/drinks/yesspleasemumma/VIPMenuYessPleaseMumma.png", name: "Drinks Menu", company: "Yess Please Mumma" },
+        { src: "assets/img/menus/drinks/yespleasemumma/yespleasemamma1.png", name: "Drinks Menu", company: "Yes Please Mumma" },
+        { src: "assets/img/menus/drinks/leisureleague/yespleasemamma2.png", name: "Drinks Menu", company: "Yes Please Mumma" },  ]
+    }
+       
   };
 
   function openModal(categoryKey){
